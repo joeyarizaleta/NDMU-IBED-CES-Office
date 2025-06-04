@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .center-content {
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .center-content a img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; /* Circular shape */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .center-content a:hover img {
+            transform: scale(1.1);
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 960px;
+            margin: 40px auto;
+        }
+        .photo-grid a img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: block;
+        }
+        .photo-grid a:hover img {
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        center p {
+            font-weight: bold;
+            margin: 10px 0 0 0;
+        }
+        center em {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+        </ul>
+
+        <h1>PHOTO GALLERY</h1>
+
+        <div class="center-content">
+            <a href="Mine.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="Mine.jpg" alt="My Pic" width="400" height="320">
+            </a>
+        </div>
+
+        <center>
+            <p>Joey C. Arizaleta</p>
+            <em>Acting Community Extension Services Coordinator</em>
+        </center>
+
+        <div class="photo-grid">
+            <a href="CES1.JPG" target="_blank" rel="noopener noreferrer"><img src="CES1.JPG" alt="CES 1"></a>
+            <a href="CES2.JPG" target="_blank" rel="noopener noreferrer"><img src="CES2.JPG" alt="CES 2"></a>
+            <a href="CES3.JPG" target="_blank" rel="noopener noreferrer"><img src="CES3.JPG" alt="CES 3"></a>
+            <a href="CES4.JPG" target="_blank" rel="noopener noreferrer"><img src="CES4.JPG" alt="CES 4"></a>
+            <a href="CES5.JPG" target="_blank" rel="noopener noreferrer"><img src="CES5.JPG" alt="CES 5"></a>
+            <a href="CES6.JPG" target="_blank" rel="noopener noreferrer"><img src="CES6.JPG" alt="CES 6"></a>
+            <a href="CES7.JPG" target="_blank" rel="noopener noreferrer"><img src="CES7.JPG" alt="CES 7"></a>
+            <a href="CES8.JPG" target="_blank" rel="noopener noreferrer"><img src="CES8.JPG" alt="CES 8"></a>
+            <a href="CES9.JPG" target="_blank" rel="noopener noreferrer"><img src="CES9.JPG" alt="CES 9"></a>
+            <a href="CES10.JPG" target="_blank" rel="noopener noreferrer"><img src="CES10.JPG" alt="CES 10"></a>
+            <a href="CES11.JPG" target="_blank" rel="noopener noreferrer"><img src="CES11.JPG" alt="CES 11"></a>
+            <a href="CES12.JPG" target="_blank" rel="noopener noreferrer"><img src="CES12.JPG" alt="CES 12"></a>
+            <a href="CES13.JPG" target="_blank" rel="noopener noreferrer"><img src="CES13.JPG" alt="CES 13"></a>
+            <a href="CES14.JPG" target="_blank" rel="noopener noreferrer"><img src="CES14.JPG" alt="CES 14"></a>
+            <a href="CES15.JPG" target="_blank" rel="noopener noreferrer"><img src="CES15.JPG" alt="CES 15"></a>
+            <a href="CES16.JPG" target="_blank" rel="noopener noreferrer"><img src="CES16.JPG" alt="CES 16"></a>
+            <a href="CES17.JPG" target="_blank" rel="noopener noreferrer"><img src="CES17.JPG" alt="CES 17"></a>
+            <a href="CES18.JPG" target="_blank" rel="noopener noreferrer"><img src="CES18.JPG" alt="CES 18"></a>
+        </div>
+    </div>
+</body>
+</html>

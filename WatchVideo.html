@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watch Video</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .video-row video {
+            width: auto;
+            height: 600px; /* typical vertical reel height */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .video-caption {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 8px;
+            color: var(--text-color, #333);
+            max-width: 600px;
+        }
+
+        /* For the main video */
+        .center-content video {
+            width: 540px;
+            height: 304px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+        </ul>
+
+        <h1>VIDEOS</h1>
+        <hr>
+
+        <div class="center-content">
+            <p>Watch these Videos!</p>
+            <video controls>
+                <source src="Final12.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-row">
+            <video controls>
+                <source src="reels1.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-caption">FUN HIKE UP THE MOUNTAIN</div>
+
+            <video controls>
+                <source src="reels2.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-caption">Donation Drive and Community Outreach with the Kids</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
