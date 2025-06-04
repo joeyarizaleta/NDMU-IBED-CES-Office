@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Community Extension Services - Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Helvetica, sans-serif;
-            background: url('images/your-background.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             color: #333;
@@ -26,7 +25,6 @@
             text-align: center;
             border-radius: 8px;
             margin-top: 0;
-            color: #000;
         }
 
         .tagline {
@@ -64,7 +62,7 @@
 
         .photo-grid {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 30px;
@@ -73,6 +71,7 @@
         .photo-grid a {
             display: block;
             width: 22%;
+            min-width: 200px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
@@ -85,13 +84,19 @@
             width: 100%;
             border-radius: 10px;
             height: auto;
+            display: block;
         }
 
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #555;
-            font-size: 0.9rem;
+        @media screen and (max-width: 768px) {
+            .photo-grid a {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .photo-grid a {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -120,11 +125,6 @@
             <a href="images/home3.jpg" target="_blank"><img src="images/home3.jpg" alt="Home Photo 3"></a>
             <a href="images/home4.jpg" target="_blank"><img src="images/home4.jpg" alt="Home Photo 4"></a>
         </div>
-
-        <!-- Footer -->
-        <footer>
-            &copy; 2025 Notre Dame of Marbel University - Integrated Basic Education Department (NDMU-IBED) | Community Extension Services
-        </footer>
     </div>
 </body>
 </html>
