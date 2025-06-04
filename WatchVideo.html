@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Watch Video</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -14,7 +15,7 @@
 
         .video-row video {
             width: auto;
-            height: 600px; /* typical vertical reel height */
+            height: 600px; /* vertical video look */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
@@ -28,7 +29,11 @@
             max-width: 600px;
         }
 
-        /* For the main video */
+        .center-content {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .center-content video {
             width: 540px;
             height: 304px;
@@ -38,9 +43,9 @@
     </style>
 </head>
 <body>
-
     <div class="overlay">
 
+        <!-- Navigation -->
         <ul>
             <li><a href="index.html">Home</a></li>
         </ul>
@@ -48,6 +53,7 @@
         <h1>VIDEOS</h1>
         <hr>
 
+        <!-- Main Video -->
         <div class="center-content">
             <p>Watch these Videos!</p>
             <video controls>
@@ -56,6 +62,7 @@
             </video>
         </div>
 
+        <!-- Reels -->
         <div class="video-row">
             <video controls>
                 <source src="reels1.MOV" type="video/mp4">
@@ -71,6 +78,5 @@
         </div>
 
     </div>
-
 </body>
 </html>
